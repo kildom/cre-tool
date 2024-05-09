@@ -1,0 +1,15 @@
+/node/
+/scripts/
+/test/
+.*
+/tsconfig.*
+/*.tgz
+/*.tar.gz
+/*.zip
+/dist/default/
+/dist/browser/
+/temp/
+/web/
+/docs/
+/con-reg-exp/
+/tmp/
