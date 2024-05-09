@@ -1,0 +1,32 @@
+{
+  "name": "cre-tool",
+  "version": "0.2.5",
+  "description": "CLI tool for Convenient Regular Expressions",
+  "bin": "./dist/cre-tool.js",
+  "main": "./dist/cre-tool.js",
+  "scripts": {
+    "build": "npx esbuild \"--banner:js=#!/usr/bin/env node\" --bundle --external:acorn --external:glob --external:commander --format=cjs --platform=node --target=node16 --sourcemap=linked src/main.ts --outfile=./dist/cre-tool.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kildom/cre-tool.git"
+  },
+  "keywords": [
+    "regex"
+  ],
+  "author": "Dominik Kilian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kildom/cre-tool/issues"
+  },
+  "homepage": "https://github.com/kildom/cre-tool#readme",
+  "devDependencies": {
+    "esbuild": "^0.21.1",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "acorn": "^8.11.3",
+    "commander": "^12.0.0",
+    "glob": "^10.3.12"
+  }
+}

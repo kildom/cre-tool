@@ -1,0 +1,3 @@
+[submodule "con-reg-exp"]
+	path = con-reg-exp
+	url = https://github.com/kildom/con-reg-exp
